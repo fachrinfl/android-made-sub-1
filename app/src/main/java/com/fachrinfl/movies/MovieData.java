@@ -31,6 +31,20 @@ public class MovieData {
                     "Josh Cooley",
                     "John Lasseter (original story by), Andrew Stanton (original story by)",
                     "Tom Hanks, Tim Allen, Annie Potts"
+            },
+            {
+                    "Aladdin",
+                    "https://m.media-amazon.com/images/M/MV5BMjQ2ODIyMjY4MF5BMl5BanBnXkFtZTgwNzY4ODI2NzM@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
+                    "2019",
+                    "2h 8min",
+                    "Adventure, Comedy, Family",
+                    "24 May 2019",
+                    "7.4/10",
+                    "77,902",
+                    "A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.",
+                    "Guy Ritchie",
+                    "John August (screenplay by), Guy Ritchie (screenplay by)",
+                    "Will Smith, Mena Massoud, Naomi Scott"
             }
     };
 
