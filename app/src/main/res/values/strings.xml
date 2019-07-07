@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="sub_title_toolbar">New Movies (In Theaters)</string>
+    <string name="cover_desc">Image cover movie</string>
+</resources>
