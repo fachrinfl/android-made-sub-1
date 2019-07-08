@@ -1,5 +1,6 @@
 package com.fachrinfl.movies;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
@@ -32,8 +33,8 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MovieViewHolder movieViewHolder, int i) {
-        MovieModel movieModel = listMovie.get(i);
+    public void onBindViewHolder(@NonNull final MovieViewHolder movieViewHolder, int i) {
+        final MovieModel movieModel = listMovie.get(i);
 
         Glide.with(movieViewHolder.itemView.getContext())
                 .load(movieModel.getCover())
@@ -55,6 +56,14 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
         DisplayMetrics metrics = movieViewHolder.itemView.getResources().getDisplayMetrics();
         if (i == 0) lp.setMargins(0, Utils.toPixels(16, metrics), 0, 0);
         movieViewHolder.mainComponent.setLayoutParams(lp);
+        movieViewHolder.mainComponent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent movieDetail = new Intent(movieViewHolder.itemView.getContext(), MovieDetail.class);
+                movieDetail.putExtra("DETAIL_MOVIE", movieModel);
+                movieViewHolder.itemView.getContext().startActivity(movieDetail);
+            }
+        });
 
     }
 

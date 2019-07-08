@@ -2,6 +2,7 @@ package com.fachrinfl.movies;
 
 import android.app.Activity;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tlTitle = (Toolbar) findViewById(R.id.tlTitle);
+        tlTitle = findViewById(R.id.tlTitle);
         tlTitle.setTitle(getResources().getString(R.string.app_name));
         tlTitle.setTitleTextColor(getResources().getColor(R.color.colorTitleToolbar));
         tlTitle.setElevation(8);

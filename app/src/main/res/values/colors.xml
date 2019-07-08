@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ffffff</color>
-    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorPrimary">#3363F6</color>
+    <color name="colorPrimaryDark">#3363F6</color>
     <color name="colorAccent">#D81B60</color>
 
-    <color name="colorTitleToolbar">#000000</color>
+    <color name="colorTitleToolbar">#ffffff</color>
 
     <color name="colorBackground">#F9FBFC</color>
+    <color name="colorBackgroundInfo">#f1c40f</color>
 
     <color name="colorTitleMovie">#2c3e50</color>
+    <color name="colorSynopsisMovie">#dfe6e9</color>
 </resources>
